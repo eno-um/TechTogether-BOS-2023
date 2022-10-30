@@ -7,6 +7,7 @@
   <title>Student Bank portal</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="toDoList.css">
   <link rel="stylesheet" href="/style.css">
 </head>
 
@@ -47,28 +48,38 @@
   </nav>
   <br>
 
-  <div>
+  <div class ="userPanel">
     <img class="userPic" src="/pexels-karolina-grabowska-8005507.png">
-    <h2>
-      Welcome Jane Doe
+    <h2 class ="userGreetFont">
+      &nbsp;&nbsp;&nbsp; Good Afternoon Jane Doe
     </h2>
+    <div class = "userGreetFont">
+    <p> Right now you have $1200 in Savings, $350 in Checking and $400 in Investments</p>
+    <p> Let's see if you have any tasks due today! </p>
+    </div>
   </div>
 
+ <!-- <div>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<div class="container">
   <div>
-    <script src ="userMoney.js"> </script>
+    <canvas id="myChart" width="200" height="200"></canvas>
   </div>
+</div>
+  </div> -->
 
 
-  <br> <br> <br> <br> <br>
+  <br> <br> <br>
 
-  <h2>To-do List</h2>
-  <div class="toCenter">
-    <br>
-    <label for="toDos">Add an item: </label>
-    <input type="text" id="your goal">
-    <input type="button" id="enterGoal" value="Add">
-  </div>
+  <div id="myDIV" class="header">
+  <h2>My To Do List</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
 
-  <p>unfinished items: <span id="demo"></span></p>
+<ul id="myUL">
+</ul>
 
 </body>
+
+</html>
